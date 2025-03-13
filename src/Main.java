@@ -2,7 +2,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // #region First task
         //casting example
         int a = 5;
         int b = 2;
@@ -22,6 +21,36 @@ public class Main {
         System.out.println(Math.sqrt(sqrtExample));
         System.out.println(Math.PI);
         System.out.println(Math.E);
-        // #endregion
+
+        //if example
+        if (a == 5) {
+            a = a + 1;
+            System.out.println("value of \"a\" is " + a);
+        } else if (a == 6) {
+            a = a + 2;
+            System.out.println(a);
+        } else {
+            a = a + 3;
+            System.out.println(a);
+        }
+
+        //switch example
+        a = 5;
+        switch (a) {
+            case 5: {
+                System.out.println("Jednako 5");
+                a = a + 1;
+            }
+
+            case 6: {
+                System.out.println("Jednako 6");
+                a = a + 2;
+            }
+
+            case 7: {
+                System.out.println("Jednako 7");
+                a = a + 3;
+            }
+        }
     }
 }
